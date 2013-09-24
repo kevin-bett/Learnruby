@@ -1,0 +1,26 @@
+def get_file(file_name)
+  file = File.open(file_name)
+  @filecontent= file.read
+  file.close
+  filecontent ("")
+end
+
+filecontent = get_file("sample.txt")
+
+
+def character_count(text)
+  puts text.length
+end
+
+def character_count_nospace
+    text_nospace = @file_content.gsub(/\s+/,"")
+    puts text_nospace .length
+end
+
+get_file("sample.txt")
+character_count(text)
+character_count_nospace
+
+
+
+
